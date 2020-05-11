@@ -1,1 +1,191 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZlbg.ttf) format('truetype');
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: url('../imgs/bgfoto2.jpeg');
+  display: flex;
+  justify-content: center;
+  border: 20px solid transparent;
+}
+body .nav {
+  writing-mode: vertical-lr;
+}
+body .nav a {
+  color: #5ebea1;
+}
+body .nav a:hover {
+  color: white;
+}
+body .container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  background-color: white;
+}
+body .container header {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 50px 0 0 5px;
+}
+body .container header .Myname {
+  width: 50%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4em;
+  color: firebrick;
+}
+body .container header .Myname .rt {
+  text-align: center;
+}
+body .container header a {
+  color: salmon;
+}
+body .container .Myinfo {
+  width: 80%;
+  height: 55%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 50px 20px;
+}
+body .container .Myinfo h1 {
+  display: flex;
+  color: #d15252;
+  border-bottom: 2px solid firebrick;
+  height: 2em;
+  justify-content: center;
+  align-items: flex-end;
+}
+body .container .Myinfo .col1 {
+  width: 40%;
+}
+body .container .Myinfo .col2 {
+  width: 40%;
+  margin: 0 0 0 40px;
+}
+@media (max-width: 500px) {
+  body .container {
+    width: 90%;
+  }
+  body .container header {
+    height: 5em;
+  }
+  body .container header .Myname {
+    font-size: 2em;
+  }
+}

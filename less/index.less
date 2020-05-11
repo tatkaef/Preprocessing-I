@@ -29,31 +29,98 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@main-color:firebrick;
+@accent-color: url('../imgs/bgfoto2.jpeg');
+.body-mix(){
+	background: @accent-color ;
+	display: flex; 
+	justify-content: center;
+	border: 20px solid transparent;
 }
 
 html, body {
     height: 100%;
 }
+
+body {	
+  .body-mix();
+  .nav{
+	writing-mode: vertical-lr;
+	a {color: rgb(94, 190, 161);
+	} //close a
+	a:hover {
+		color: white;
+	}
+  } //close nav
+  .container{
+	width: 80%;
+	display: flex; 
+	flex-wrap: wrap ;
+	justify-content: center;
+	background-color: white;
+	header{
+		width: 80%;
+		height: 30%;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 50px 0 0 5px;
+		.Myname{
+			width: 50%;
+			font-family: 'Indie Flower', cursive;
+			font-size: 4em;
+			color: @main-color;
+			.rt{
+				text-align:center;				
+			} //close rt
+		} //close Myname
+		a {
+			color: salmon;
+			} //close a		
+	}//close header
+    .Myinfo{
+		width: 80%;
+		height: 55%;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 0 0 50px 20px;
+		h1{
+			display: flex;
+			color: rgb(209, 82, 82);
+			border-bottom: 2px solid @main-color;
+			height: 2em;						
+			justify-content: center;
+			align-items: flex-end;
+
+			// border: 1em;
+		}
+		.col1{
+			width: 40%;
+		} //close col1
+		.col2{
+			width: 40%;
+			margin: 0 0 0 40px;
+		} //close col2
+	} //close Myinfo
+
+} //close container
+} //close body
+
+@media(max-width: 500px){
+	body{
+		.container{
+			width: 90%;
+			// background-color: powderblue;
+			header{
+				height: 5em;
+				.Myname{
+					font-size: 2em;
+				}
+		} //header
+		} //container
+	} //body
+} //close 500px
+
+
 
